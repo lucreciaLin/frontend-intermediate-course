@@ -133,4 +133,9 @@ body {
 }
 .wrapper > .bg > li > div > div > div > h3 {
 	margin: 0 0 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 200px;
+
 }
