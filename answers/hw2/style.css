@@ -104,12 +104,15 @@ body {
 	vertical-align: top;
 	width: 300px;
 	margin: 0 7.6px;
-	transition: box-shadow 2s;
+	transition: box-shadow 2s ease, background 6s ease 1.5s;
+	background: rgba(139,131,134,0.7);
+
 }
 .col:hover {
-	-webkit-box-shadow: 0px 0px 30px 5px rgba(231,166,26,0.8);
-	-moz-box-shadow: 0px 0px 30px 5px rgba(231,166,26,0.8);
-	box-shadow: 0px 0px 30px 5px rgba(231,166,26,0.8);
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.8);
+	background: rgba(238,213,210,0.7);
 }
 .preview img,
 .intro figure img {
