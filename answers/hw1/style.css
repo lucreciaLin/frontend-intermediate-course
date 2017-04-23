@@ -91,47 +91,53 @@ body {
 	display: flex;
 	justify-content: center;
 }
-.wrapper > .bg {
+.bg {
 	display: flex;
 	flex-direction: column;
 	margin: 2em 0;
 }
-.wrapper > .bg > li {
+.row {
 	margin: 0 0 1.3em;
 }
-.wrapper > .bg > li > div {
+.col {
 	display:inline-block;
 	vertical-align: top;
 	width: 300px;
 	margin: 0 7.6px;
 }
-.wrapper > .bg > li > div > figure > img,
-.wrapper > .bg > li > div > div > figure > img {
+.preview img,
+.intro figure img {
 	display: block;
 }
-.wrapper > .bg > li > div > figure > img {
-	width: 300px;
+.preview {
+	width:300px;
 }
-.wrapper > .bg > li > div > div {
+.preview img {
+	width:100%;
+}
+.intro {
 	background: rgba(0,0,0,0.3);
 	display: flex;
 	align-items: center;
 	padding: 10px;
 	color: #aaa;
 }
-.wrapper > .bg > li > div > div > figure,
-.wrapper > .bg > li > div > div > div {
+.intro figure,
+.introNameList {
 	display: inline-block;
 	vertical-align: top;
 }
-.wrapper > .bg > li > div > div > figure {
+.intro figure {
 	margin: 0 20px 0 0;
 }
-.wrapper > .bg > li > div > div > figure > img {
-	width: 60px;
+.intro figure {
+	width:60px;
+}
+.intro figure img {
+	width:100%;
 	border-radius: 50%;
 }
-.wrapper > .bg > li > div > div > div > h3 {
+.introNameList h3 {
 	margin: 0 0 10px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
