@@ -88,11 +88,23 @@ body {
 	top: 0;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
-	display: flex;
-	justify-content: center;
+	display: -webkit-box;	/* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -webkit-flex;	/* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: -ms-flexbox;	/* TWEENER - IE 10 */
+	display: flex;	/* NEW, Spec - Firefox, Chrome, Opera */
+	-webkit-box-justify-content: center;	/* OLD - iOS 6-, Safari 3.1-6 */
+	-webkit-justify-content: center;	/* Safari 6.1+. iOS 7.1+, BB10 */
+	-ms-justify-content: center;	/* IE 10 */
+	justify-content: center;	/* NEW, Spec - Firefox, Chrome, Opera */
 }
 .bg {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	margin: 2em 0;
 }
@@ -104,14 +116,14 @@ body {
 	vertical-align: top;
 	width: 300px;
 	margin: 0 7.6px;
-	transition: box-shadow 2s ease, background 6s ease 1.5s;
+	transition: box-shadow 2s ease, background 3s ease 1s;
 	background: rgba(139,131,134,0.7);
 
 }
 .col:hover {
-	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.8);
-	-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.8);
-	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.5);
+	box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.5);
 	background: rgba(238,213,210,0.7);
 }
 .preview img,
@@ -123,15 +135,21 @@ body {
 	transition: all 2s;
 }
 .preview:hover {
-	-webkit-filter: contrast(250%) brightness(250%); /* Safari 6.0 - 9.0 */
-	filter: contrast(250%) brightness(250%);
+	-webkit-filter: brightness(150%); /* Safari 6.0 - 9.0 */
+	filter: brightness(150%);
 }
 .preview img {
 	width:100%;
 }
 .intro {
 	background: rgba(0,0,0,0.3);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
 	padding: 10px;
 	color: #aaa;
