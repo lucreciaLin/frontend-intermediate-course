@@ -78,7 +78,7 @@
 					}
 				}
 			};
-			xhttp.open("GET", "https://api.twitch.tv/kraken/streams/?game=League%20of%20Legends&limit=20&offset="+m_offset+"&language="+ m_lang, true);
+			xhttp.open("GET", "https://api.twitch.tv/kraken/streams/?game=League%20of%20Legends&limit=21&offset="+m_offset+"&language="+ m_lang, true);
 			xhttp.setRequestHeader("Accept", "application/vnd.twitchtv.v5+json");
 			xhttp.setRequestHeader("client-id","uivr9vpjkf35a0qdxpwdf5ob2b8es3");
 			xhttp.send();
