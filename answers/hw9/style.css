@@ -1,0 +1,35 @@
+@charset "UTF-8";
+a,body{color:#4a4a4a}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
+.btnZone,.col{vertical-align:top}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+a{text-decoration:none}
+li,ol{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}
+table{border-collapse:collapse;border-spacing:0}
+*{-webkit-box-sizing:border-box;box-sizing:border-box}
+*,:after,:before{margin:0;padding:0}
+body,h1,h2,h3,h4,h5,h6{font-family:"微軟正黑體","黑体","Hiragino Sans GB","Microsoft YaHei",Arial}
+body,html{background:url(http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg) fixed}
+.menuZone{color:#eee}
+.mainTitle{font-size:1.5em;margin:.5em auto}
+.btnZone{cursor:pointer;display:inline-block;margin:0 0 1.5em}
+.btnZone .enBtn,.btnZone .zhTwBtn{display:block;color:#eee}
+.btnZone .enBtn:active,.btnZone .enBtn:hover,.btnZone .zhTwBtn:active,.btnZone .zhTwBtn:hover{display:block;color:#6495ed}
+.wrapper{background-color:rgba(0,0,0,.5);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-justify-content:center;-webkit-justify-content:center;-ms-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.bg{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;margin:2em auto;max-width:1000px;text-align:center}
+.col,.row{text-align:left}
+.row{margin:0 25px 1.3em}
+.col{display:inline-block;width:300px;margin:0 7.6px 1.3em;-webkit-transition:background 3s ease 1s,-webkit-box-shadow 2s ease;-o-transition:box-shadow 2s ease,background 3s ease 1s;transition:box-shadow 2s ease,background 3s ease 1s;transition:box-shadow 2s ease,background 3s ease 1s,-webkit-box-shadow 2s ease;background:rgba(139,131,134,.7)}
+.col:hover{-webkit-box-shadow:5px 5px 20px 5px rgba(0,0,0,.5);-moz-box-shadow:5px 5px 20px 5px rgba(0,0,0,.5);box-shadow:5px 5px 20px 5px rgba(0,0,0,.5);background:rgba(238,213,210,.7)}
+.intro figure img,.preview img{display:block}
+.preview{width:300px;-webkit-transition:all 2s;-o-transition:all 2s;transition:all 2s}
+.preview:hover{-webkit-filter:brightness(150%);filter:brightness(150%)}
+.preview img{width:100%;height:168px}
+.intro{background:rgba(0,0,0,.3);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align-items:center;-webkit-align-items:center;-ms-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:10px;color:#aaa}
+.intro figure{margin:0 20px 0 0;width:60px}
+.intro figure img{width:100%;border-radius:50%;height:60px}
+.intro figure,introNameList{display:inline-block;vertical-align:top}
+.introNameList h3{margin:0 0 10px;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;max-width:200px;line-height:1.5}
