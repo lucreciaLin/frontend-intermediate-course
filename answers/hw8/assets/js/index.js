@@ -6,6 +6,10 @@
 	4. 註冊scroll事件:for lazy-loading
 	5. 註冊click事件:for i18n
 	*/
+	var I18N = {
+		"en": require("./lang_en.js"),
+		"zh-tw": require("./lang_zh_tw.js")
+	};
 	let m_offset = 0;
 	const MAGICNUM = 20;
 	let m_dataOffset = 0;
@@ -167,16 +171,17 @@
 		document.getElementById("zhTwBtn").addEventListener("click", changeLang);
 
 		function changeLang(e) {
+
 			var e = event.target;
 			let getAttr = e.getAttribute("data-selectedLang");
-			if (getAttr === "en" || getAttr === 'zh-tw') {
-			document.getElementById("mainTitle").innerHTML = window.I18N[getAttr].TITLE;
-			m_lang = getAttr;
-			//the following 4 lines: recalculation
-			m_offset = 0;
-			m_dataOffset = 0;
-			LIZONE.innerHTML = "";
-			init();
+			if (getAttr === "en" || getAttr === "zh-tw") {
+				document.getElementById("mainTitle").innerHTML = I18N[getAttr].TITLE;
+				m_lang = getAttr;
+				//the following 4 lines: recalculation
+				m_offset = 0;
+				m_dataOffset = 0;
+				LIZONE.innerHTML = "";
+				init();
 			}
 		}
 	})();
@@ -189,5 +194,3 @@
 	window.onload = init();
 
 }();
-require("./lang_en.js");
-require("./lang_zh_tw.js");
